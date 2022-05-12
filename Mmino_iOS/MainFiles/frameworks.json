@@ -1,0 +1,10 @@
+{
+    "EventKit.framework": 1,
+    "EventKitUI.framework": 1,
+    "Social.framework": 1,
+    "MessageUI.framework": 1,
+    "SystemConfiguration.framework": 1,
+    "Foundation.framework": 1,
+    "AVFoundation.framework": 1,
+    "AudioToolbox.framework": 1
+}

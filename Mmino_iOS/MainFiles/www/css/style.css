@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'RalewayBlack';
+    src: url('RalewayBlack.eot');
+    src: url('RalewayBlack.eot') format('embedded-opentype'),
+         url('RalewayBlack.woff') format('woff'),
+         url('RalewayBlack.ttf') format('truetype'),
+         url('RalewayBlack.svg#RalewayBlack') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('HelveticaNeue.eot');
+    src: url('HelveticaNeue.eot') format('embedded-opentype'),
+         url('HelveticaNeue.woff') format('woff'),
+         url('HelveticaNeue.ttf') format('truetype'),
+         url('HelveticaNeue.svg#HelveticaNeue') format('svg');
+}
+
+#facebook{
+  color: #00aced;
+}
+#twitter{
+  color: #3b5998;
+}
+#instagram{
+  color: #9b6954;
+}
+#shareAll{
+  color: #7EC0EE;
+}
+#other{
+  color: #dd4b39;
+}
+#otherBg{
+  color: #FCF9CE;
+  background: url('/img/home/strip6.png');
+}
+#calendar{
+  color: #7B0099;
+}
+#call{
+  color: #dd4b39;
+}
+#standard{
+  color: #A7936A;
+}
+
+#line-h{
+  line-height: 300%;
+}
+#literBg{
+  background: #FFF;
+}
+#darkBg{
+  background: #A9736A;
+}
+#dakerBg{
+  background: #735C2D;
+}
+#navBg{
+  background: url('img/home/navBg.png');
+  padding-bottom: 1em;
+}
+
+#line{
+  border-right: 1px solid #735C2D;
+  color: #FFF;
+}
+#line2{
+  border-right: 1px solid #735C2D;
+  height: auto;
+  color: #FFF;
+}
+
+#goldStrip{
+  background: url('/img/home/strip4.png');
+}
+
+#blackStrip{
+  background: url('/img/home/strip5.png');
+}
+
+.padAll{
+  padding: 1em;
+}
+.padVertical{
+  padding: 1em 0;
+}
+.padTop{
+  padding-top: 1em;
+}
+.padLeft{
+  padding-left: 1em;
+}
+.margin-{
+    margin-top:-3.6em;
+}
+
+.artistTitle{
+  margin-top: -2.5em;
+  padding: .2em 1em;
+  background: #00aced;
+  z-index: 1;
+  position: absolute;
+  background: url('/img/home/strip.png');
+}
+.bgC{
+  background: #2C3539;
+}
+
+
+.platform-ios .manual-ios-statusbar-padding{
+  padding-top:20px;
+}
+.manual-remove-top-padding{
+  padding-top:0px;
+}
+.manual-remove-top-padding .scroll{
+  padding-top:0px !important;
+}
+.gallery {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}

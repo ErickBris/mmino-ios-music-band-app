@@ -1,0 +1,12 @@
+<div ng-controller="streamCtrl">
+  <ion-view style="" class=" " id="page9" title="Stream">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+        <iframe width="100%" height="100%" scrolling="yes" frameborder="no" style="display: {{streamAudio}}"
+            src="{{audioStream | trustAsResourceUrl}}">
+        </iframe>
+        <iframe width="100%" height="100%" scrolling="yes" frameborder="no" style="display: {{streamVideo}}"
+            src="{{videoStream | trustAsResourceUrl}}">
+        </iframe>
+      </ion-content>
+  </ion-view>
+</div>

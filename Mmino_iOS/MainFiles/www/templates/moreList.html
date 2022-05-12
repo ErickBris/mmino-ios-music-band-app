@@ -1,0 +1,23 @@
+<div ng-controller="moreListCtrl">
+  <ion-view style="" class=" " id="page7" title="More List">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true" class="">
+            <ion-slide ng-repeat="list in more">
+                <img src="{{list.IMAGE}}" alt="Image" width="100%" height="auto">
+                <div class="list card">
+          				<div class="item item-text-wrap" style="background: #FFF;">
+          					{{list.TEXT}}
+          				</div>
+          			</div>
+                <div class="list card" style="background: #2C3539;">
+                  <div class="button-bar">
+                    <button class="button button-clear icon ion-ios-navigate" id="standard"
+                    ui-sref="aeTabsController.more({id:list.id})">
+                    {{list.TITLE}}
+                    </button>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+      </ion-content>
+  </ion-view>
+</div>

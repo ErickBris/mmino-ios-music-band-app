@@ -1,0 +1,15 @@
+<div ng-controller="eventListCtrl">
+<ion-view style="" class=" " id="page6" title="Event List">
+    <ion-content class="has-header" padding="false">
+        <img src="img/events/banner.png" width="100%" >
+        <ion-list>
+            <ion-item ng-repeat="event in events" ui-sref="aeTabsController.event({id:event.id})" class="item-thumbnail-left item-icon-right  ">
+                <img src="{{event.THUMBNAIL}}">
+                <h2 id="line-h">{{event.TITLE}}</h2>
+                <p>{{event.DATE}}</p>
+                <i class="icon ion-ios-arrow-forward icon-accessory"></i>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+</div>

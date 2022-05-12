@@ -1,0 +1,28 @@
+<div ng-controller="artistCtrl">
+  <ion-view style="" class=" " id="page10" title="Artist">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+          <img src="{{img}}" height="auto" width="100%">
+          <div class="button-bar" style="width:50%;padding-left: 40%; margin-top:-1em">
+            <button class=" button button-clear icon ion-social-twitter " id="twitter"
+              onclick="window.open('https://twitter.com', '_system', 'location=yes'); return false;">
+            </button>
+            <button class=" button button-clear icon ion-social-facebook " id="facebook"
+              onclick="window.open('https://facebook.com', '_system', 'location=yes'); return false;">
+            </button>
+            <button class=" button button-clear icon ion-social-instagram-outline " id="instagram"
+              onclick="window.open('https://facebook.com', '_system', 'location=yes'); return false;">
+            </button>
+            <button class=" button button-clear icon ion-ios-upload-outline " id="shareAll" ng-click="shareAll()" ></button>
+          </div>
+          <div class="item item-body" style="text-align: justify; background: #FFF">
+            <p>
+              {{bio}}
+            </p>
+          <p>
+            {{bio2}}
+          </p>
+          </div>
+        </div>
+      </ion-content>
+  </ion-view>
+</div>

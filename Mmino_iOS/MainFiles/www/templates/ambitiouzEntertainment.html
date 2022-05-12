@@ -1,0 +1,29 @@
+<div ng-controller="ambitiouzEntertainmentCtrl">
+  <ion-view class=" " id="literBg" title="Mmino">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+      <img src="{{fevent}}" width="100%" height="auto">
+          <div class="button-bar" style="padding-bottom: 1em; position: fixed; top:0">
+              <a class=" button button-positive  button-clear" ng-click="openSongs()"></a>
+              <a class=" button button-positive  button-clear" ng-click="openArtists()"></a>
+              <a class=" button button-positive  button-clear" ng-click="openVideos()"></a>
+          </div>
+          <div style="background: #FFF; margin-top: -4.5em; padding-bottom:1em; width:100%;">
+            <div class="button-bar">
+              <button class="button button-clear"
+                ui-sref="aeTabsController.eventUri({id:1})">
+              </button>
+              <button class="button button-clear"
+                ui-sref="aeTabsController.event({id:3})">
+              </button>
+            </div>
+          </div>
+          <img src="img/home/strip4.png" width="100%" height="40px">
+          <center class="title" style="margin-top:-3em; color: #FFF; font-family:RalewayBlack; background:#000">FEATURED MUSIC</center>
+          <iframe src="{{fvideo | trustAsResourceUrl}}" allowfullscreen=""
+              frameborder="0" height="315" width="100%">
+          </iframe>
+          <center class="title" style="margin-top:-.5em; color: #FFF; font-family:RalewayBlack;"></center>
+          <img src="img/home/fSong.png" width="100%" height="auto" ui-sref="aeTabsController.song({id:4})">
+      </ion-content>
+  </ion-view>
+</div>

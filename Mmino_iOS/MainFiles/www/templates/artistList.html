@@ -1,0 +1,11 @@
+<div ng-controller="artistListCtrl">
+  <ion-view style="" class=" " id="page4" title="Artist List">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+        <div class="row gallery" style="margin:-1em -.5em;">
+            <div class="col col-50" ng-repeat="img in artists"  style="" ui-sref="aeTabsController.artist({id:img.id})">
+                <img src="{{img.IMAGE}}" height="auto" width="108%">
+            </div>
+        </div>
+      </ion-content>
+  </ion-view>
+</div>

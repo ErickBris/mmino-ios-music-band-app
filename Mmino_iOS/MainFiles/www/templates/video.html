@@ -1,0 +1,26 @@
+<div ng-controller="videoCtrl">
+  <ion-view style="" class=" " id="#literBg" title="Video">
+      <ion-content overflow-scroll="true" padding="false" class=" manual-remove-top-padding has-header">
+          <div class=" " id="video-video4" style="position:relative;overflow:hidden;padding-bottom:150%;height:0;">
+              <iframe src="{{embedVid | trustAsResourceUrl}}" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:80%;"
+                  frameborder="0" height="auto" width="560" scrolling="yes">
+              </iframe>
+              <div class="item item-body">
+                <center class="title"><strong>{{artist}}</strong></center>
+                <center class="title">{{title}}</center>
+              </div>
+          </div>
+          <p style="margin-top:-30%; text-align: center;" class="padAll">
+            {{desc}}
+            <p style="font-size:52px !important;">
+            <button class="button button-bar icon ion-share " id="otherBg" ng-click="shareAll()" style="font-size:52px !important;"></button>
+          </p>
+          </p>
+          <!--div class=" button-bar " id="goldStrip" style="margin-top:-1em; position: fixed;">
+            <button class="button button-clear icon ion-social-twitter" id="twitter" ng-click="shareTwitter()"></button>
+            <button class="button button-clear icon ion-social-facebook" id="facebook" ng-click="shareFacebook()"></button>
+            <button class="button button-clear icon ion-share " id="shareAll" ng-click="shareAll()"></button>
+          </div-->
+      </ion-content>
+  </ion-view>
+</div>

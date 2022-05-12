@@ -1,0 +1,16 @@
+<div ng-controller="videoListCtrl">
+  <ion-view style="" class=" " id="page3" title="Video List">
+      <ion-content padding="false" class=" manual-remove-top-padding has-header">
+        <img src="img/videos/banner.png" width="100%" />
+        <ion-list>
+          <ion-item ng-repeat="video in videos" ui-sref="aeTabsController.video({id:video.id})"
+            class="item-thumbnail-left item-icon-right">
+            <img src="{{video.THUMBNAIL}}">
+            <h2 id="line-h">{{video.ARTIST}}</h2>
+            <p>{{video.TITLE}}</p>
+            <i class="icon ion-ios-arrow-right icon-accessory" style="color: #A7936A"></i>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+  </ion-view>
+</div>

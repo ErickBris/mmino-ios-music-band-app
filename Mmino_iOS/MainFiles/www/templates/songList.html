@@ -1,0 +1,12 @@
+<div ng-controller="songListCtrl">
+  <ion-view style="" class=" " id="literBg" title="Song List">
+      <ion-content class=" manual-remove-top-padding has-header">
+          <img src="img/songs/0-0.png" width="100%"/>
+          <div class="row gallery">
+              <div class="col col-50" ng-repeat="img in songs" ui-sref="aeTabsController.song({id:img.id})">
+                  <img src="{{img.IMAGE}}" height="auto" width="100%">
+              </div>
+          </div>
+      </ion-content>
+  </ion-view>
+<div>

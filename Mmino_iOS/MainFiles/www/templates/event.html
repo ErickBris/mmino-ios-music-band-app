@@ -1,0 +1,98 @@
+<div ng-controller="eventCtrl">
+<ion-view style="" class=" " id="page11" title="Event">
+    <ion-content overflow-scroll="true" class="bgC manual-remove-top-padding con-bkg has-header" ng-init="initialize()">
+        <ion-nav-title>{{events}}</ion-nav-title>
+            <img src="{{evImageUrl}}" width="100%" height="auto" alt="Image" />
+            <!--div class="" style="background: url(img/strip6.png); position: absolute; width:15%; top:0; margin:-.8em 0;">
+              <p ng-if="event.status">This event is already added to your calendar!</p>
+              <button class="button button-clear icon ion-calendar" id="calendar"
+                ng-if="!event.status" ng-click="addEvent(event,$index)">
+              </button>
+              <button class="button button-clear icon ion-social-facebook" id="facebook"
+                ng-click="shareFacebook()">
+              </button>
+              <button class="button button-clear icon ion-social-twitter" id="twitter"
+                ng-click="shareTwitter()">
+              </button>
+              <button class="button button-clear icon ion-share" id="shareAll"
+                ng-click="shareAll()">
+              </button>
+            </div-->
+            <!--div class="button-bar margin-" style="background: url('img/strip2.png'); position: absolute;width:70%;">
+              <p ng-if="event.status">This event is already added to your calendar!</p>
+              <button class="button button-clear icon ion-calendar" id="calendar"
+                ng-if="!event.status" ng-click="addEvent(event,$index)">
+              </button>
+              <button class="button button-clear icon ion-social-facebook" id="facebook"
+                ng-click="shareFacebook()">
+              </button>
+              <button class="button button-clear icon ion-social-twitter" id="twitter"
+                ng-click="shareTwitter()">
+              </button>
+              <button class="button button-clear icon ion-share" id="shareAll"
+                ng-click="shareAll()">
+              </button>
+              <button class="button button-clear icon ion-ios-telephone" id="call"
+                ng-click="makeCall()">
+              </button>
+            </div-->
+			<div class="list card">
+				<div class="item item-text-wrap" style="text-align: justify">
+					{{evDesc}}
+				</div>
+			</div>
+      <div class="button-bar">
+        <button class="button button-clear icon ion-ios-cart" style="color: #A7936A"
+          ui-sref="aeTabsController.eventUri({id:1})">
+          BUY TICKET
+        </button>
+        <button class="button button-clear icon ion-ios-navigate" style="color: #A7936A"
+          ui-sref="aeTabsController.eventUri({id:2})">
+          VIEW ONLINE
+        </button>
+      </div>
+			<div class="grey-bkg list card">
+				<div class="grey-bkg item item-text-wrap">
+					<strong class="red-color">Date/Time - c  o  d  e  l i s  t . c  c:</strong>
+					<div style="float:right; width:50%">
+						{{evDateTime}}<br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="grey-bkg list card">
+				<div class="grey-bkg item item-text-wrap">
+					<strong class="red-color">Location:</strong>
+					<div style="float:right; width:50%">
+						{{evLocation}}<br /><br />
+					</div>
+				</div>
+			</div>
+			<div class="grey-bkg list card">
+				<div class="grey-bkg item item-text-wrap">
+					<strong class="red-color">Notes:</strong>
+					<div style="float:right; width:70%;text-align: justify">
+						{{evNotes}}<br /><br />
+					</div>
+				</div>
+			</div>
+      <div class="list card" style="background: #2C3539;">
+
+        <div class="button-bar">
+          <p ng-if="event.status">This event is already added to your calendar!</p>
+          <button class="button button-clear icon ion-ios-telephone-outline" id="standard"
+            ng-click="makeCall()">
+          </button>
+          <button class="button button-clear icon ion-ios-calendar-outline" id="standard"
+            ng-if="!event.status" ng-click="addEvent(event,$index)">
+          </button>
+          <button class="button button-clear icon ion-ios-upload-outline" id="standard"
+            ng-click="shareAll()">
+          </button>
+          <button class="button button-clear icon ion-ios-email-outline" id="standard"
+            ng-if="!event.status" ng-click="sendEmail()">
+          </button>
+        </div>
+      </div>
+    </ion-content>
+</ion-view>
+</div>
